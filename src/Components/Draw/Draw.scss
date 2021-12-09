@@ -1,0 +1,84 @@
+.contenedor {
+    width: 100%;
+    height: 100%;
+    transition: all 2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contenedor-persona {
+        width: 6em;
+        height: 11.5em;
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .persona-cabeza {
+            width: 3em;
+            height: 3em;
+            border-radius: 50%;
+            background-color: black;
+            position: relative;
+            z-index: 2;
+
+            &:after {
+                content: '';
+                width: 2.1em;
+                height: 2.1em;
+                border-radius: 50%;
+                background-color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .contenedor-brazos {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 0;
+
+            .persona-cuerpo {
+                width: .5em;
+                height: 4.5em;
+                transform: translate(0, -.8em);
+                background-color: black;
+            }
+
+            .persona-brazo {
+                width: .5em;
+                height: 3.5em;
+                transform: translate(-2em, -1.1em) rotate(45deg);
+                background-color: black;
+
+                &.derecho {
+                    transform: translate(2em, -1.1em) rotate(-45deg) scale(-1, 1);
+                }
+            }
+        }
+
+        .contenedor-piernas{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(-1.4em);
+
+            .persona-pierna{
+                width: .5em;
+                height: 3.5em;
+                transform: translate(-1.5em) rotate(45deg);
+                background-color: black;
+
+                &.derecha {
+                    transform: translate(1.5em) rotate(-45deg) scale(-1, 1);
+                }
+            }
+        }
+    }
+}
