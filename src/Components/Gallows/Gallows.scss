@@ -1,0 +1,60 @@
+.gallows {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 1em auto;
+
+    .gallows__one{
+        width: .5em;
+        height: 2.5em;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: black;
+    }
+
+    .gallows__two {
+        width: 8em;
+        height: .5em;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: black;
+    }
+
+    .gallows__tree{
+        width: .5em;
+        height: 10em;
+        position: absolute;
+        top: 0;
+        left: 35%;
+        background-color: black;
+    }
+
+    .gallows__four{
+        width: 9em;
+        height: .5em;
+        position: absolute;
+        bottom: 20%;
+        left: 0;
+        background-color: black;
+    }
+
+    .gallows__five{
+        width: .5em;
+        height: 2.5em;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+    }
+
+    .gallows__six{
+        width: .5em;
+        height: 2.5em;
+        position: absolute;
+        bottom: 0;
+        left: 68%;
+        background-color: black;
+    }
+}

@@ -22,7 +22,6 @@ const diccionario = {
     "RUBY",
     "DEV",
     "AWS",
-    "",
   ],
 
   // ---------------------------------------------------------     5 - 8
@@ -58,7 +57,7 @@ const diccionario = {
     "JENKINS",
     "CODEWARS",
     "CODEPEN",
-    "",
+    "PROYECTO",
   ],
 
   // ---------------------------------------------------------    9 - 12
@@ -77,8 +76,7 @@ const diccionario = {
     "DIGITALOCEAN",
     "KUBERNETES",
     "BITBUCKET",
-    "",
   ],
 };
 
-export default diccionario
+export default diccionario;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { IoRemove } from "react-icons/io5";
 import './Word.scss';
 
-export default function Palabra({ word }) {
+export default function Palabra({ word = 'TESTER' }) {
     const [letraArray, setLetraArray] = useState([...word].map(() => false));
 
     const handleClick = (index) => {

@@ -1,11 +1,10 @@
-.container {
+.landing__container {
     width: 100%;
     height: 100vh;
     display: flex;
-    background-color: #B9E041;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    
+
     h1 {
         font-size: 2em;
         align-items: center;
@@ -13,7 +12,7 @@
         padding-top: 2%;
     }
 
-    .containerlevels {
+    .landing__levels {
         width: 23em;
         height: 23em;
         display: flex;
@@ -27,14 +26,12 @@
             right: 10%;
             background-color: rgba(245, 245, 245, 0.534);
             border-bottom: none;
-            border: 1px solid;
             font-size: 1.3em;
             border-radius: 3%;
         }
 
-        .container-btns {
+        .landing__btns {
             width: 23em;
-            background-color: lawngreen;
             height: 55%;
             display: flex;
             flex-direction: row;
@@ -43,7 +40,7 @@
             border: 1px solid;
             border-radius: 7%;
 
-            .btns {
+            .landing__div-btns {
                 width: 100%;
                 height: 50%;
                 display: flex;
@@ -52,7 +49,7 @@
                 align-items: center;
                 text-align: center;
 
-                .btn {
+                .landing__btn {
                     display: flex;
                     width: 30%;
                     height: 50%;
@@ -62,8 +59,8 @@
                     align-content: center;
                     justify-content: center;
                     text-decoration: none;
+                    border: 1px solid;
                     color: black;
-                    background-color: whitesmoke;
                 }
             }
         }
