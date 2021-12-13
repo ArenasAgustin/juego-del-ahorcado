@@ -1,27 +1,28 @@
+import { EASY, HARD, MEDIUM } from "../constants/constants";
+import dictionary from "../../Dictionary/dictionary";
 
 const initialState = {
-    actualLevel: [],
-}
+  actualLevel: dictionary.easy,
+};
 
-export default function reducer(state = initialState, action) {
-    console.log('!!!!!!!!! ACTION', action.payload)
-    switch(action.type) {
-        case "EASY": 
-            return {
-                ...state,
-                actualLevel: action.payload
-            }
-        case "MEDIUM":
-            return {
-                ...state,
-                actualLevel: action.payload
-            }
-        case "HARD":
-            return {
-                ...state,
-                actualLevel: action.payload
-            }
-        default: 
-            return state
-        }
+export default function reducer(state = initialState, { type, payload }) {
+  switch (type) {
+    case EASY:
+      return {
+        ...state,
+        actualLevel: payload,
+      };
+    case MEDIUM:
+      return {
+        ...state,
+        actualLevel: payload,
+      };
+    case HARD:
+      return {
+        ...state,
+        actualLevel: payload,
+      };
+    default:
+      return state;
+  }
 }

@@ -1,6 +1,6 @@
-const diccionario = {
+const dictionary = {
   // ---------------------------------------------------------     0 - 4
-  facil: [
+  easy: [
     "HTML",
     "GIT",
     "NODE",
@@ -25,7 +25,7 @@ const diccionario = {
   ],
 
   // ---------------------------------------------------------     5 - 8
-  medio: [
+  medium: [
     "GITHUB",
     "BINARIO",
     "REACT",
@@ -61,7 +61,7 @@ const diccionario = {
   ],
 
   // ---------------------------------------------------------    9 - 12
-  dificil: [
+  hard: [
     "JAVASCRIPT",
     "TYPESCRIPT",
     "COFFESCRIPT",
@@ -79,4 +79,4 @@ const diccionario = {
   ],
 };
 
-export default diccionario;
+export default dictionary;

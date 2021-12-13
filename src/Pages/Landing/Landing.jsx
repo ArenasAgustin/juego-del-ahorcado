@@ -3,14 +3,15 @@ import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { getEasyLevel, getMediumLevel, getHardLevel } from '../../redux/actions/index'
 import './Landing.scss'
+import { EASY, HARD, MEDIUM } from '../../redux/constants/constants'
 
 const Landing = () => {
 
     const dispatch = useDispatch()
 
     const handleLevel = (level) => {
-        if (level === "EASY") return dispatch(getEasyLevel())
-        if (level === "MEDIUM") return dispatch(getMediumLevel())
+        if (level === EASY) return dispatch(getEasyLevel())
+        if (level === MEDIUM) return dispatch(getMediumLevel())
         return dispatch(getHardLevel())
     }
 
@@ -22,15 +23,15 @@ const Landing = () => {
                 <div className="landing__btns">
                     <div className="landing__div-btns">
                         <Link to='/home' className="landing__btn">
-                            <span onClick={e => handleLevel("EASY")}>Facil</span>
+                            <span onClick={e => handleLevel(EASY)}>Facil</span>
                         </Link>
 
                         <Link to='/home' className="landing__btn">
-                            <span onClick={e => handleLevel("MEDIUM")}>Medio</span>
+                            <span onClick={e => handleLevel(MEDIUM)}>Medio</span>
                         </Link>
 
                         <Link to='/home' className="landing__btn">
-                            <span onClick={e => handleLevel("HARD")}>Dificil</span>
+                            <span onClick={e => handleLevel(HARD)}>Dificil</span>
                         </Link>
                     </div>
                 </div>
