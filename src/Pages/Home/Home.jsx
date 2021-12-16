@@ -8,13 +8,13 @@ import Word from '../../Components/Word/Word'
 import './Home.scss'
 
 const Home = () => {
-    const actualLevel = useSelector(state => state.actualLevel)
+    const wordState = useSelector(state => state.word)
 
-    const [word, setWord] = useState(actualLevel[Math.floor(Math.random() * actualLevel.length)])
+    const [word, setWord] = useState(wordState)
 
     useEffect(() => {
-        setWord(actualLevel[Math.floor(Math.random() * actualLevel.length)])
-    }, [actualLevel])
+        setWord(wordState)
+    }, [wordState])
 
     return (
         <div className='home'>
